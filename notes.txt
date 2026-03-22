@@ -1,0 +1,129 @@
+# Research notes
+
+## Foundations
+
+1830s & 40s - Charles Babbage designs the analytical engine, first
+proto-computer and Ada Lovelace writes an algorithm for calculating Bernoulli
+numbers earning her the name of the first computer programmer.
+
+1930s and 40s, Konrad Zuse develops the world's first binary digital computers
+and defines the Plankalkül language (assignment, ifs and loops)
+
+First programs were written in binary machine code which required a huge
+intellectual effort from the programmer, to make them human readable assemblers
+were created which converted mnemonics into machine codes
+
+With the increase of computing power so did increase the scope of the programs
+being written which required creation of higher level languages to increase the
+speed and ease of programming, portability of programs between machines, and
+managing big projects.
+
+
+## First languages
+
+To solve the Software Crisis, high-level languages were created which
+simplified the job of the programmer, made code portable between the machines
+and made the management of projects easier.
+
+Fortran (FORmula Translator) - created at IBM, high-performance numeric
+computing, efficient compiler to machine code
+
+Lisp (LISt Processor) - first functional language, introduced garbage
+collection and heap allocation, symbolic computing used for reasearching AI in
+the US, free from Von Neumannean notions of variables, assignments, gotos etc.
+
+COBOL - created as a successor to FLOW-MATIC, it used English-like syntax and
+focused on business data processing and moving and formatting data instead of
+heavy computation. Still in existence today mostly in legacy banking
+environment.
+
+Algol - first universal machine independent language, precursor of modern
+syntaxes with nested blocks of statements, local variables, lexical scoping,
+BNF grammar etc.
+
+## Structure and logic
+
+Led by Dijkstra's "Go To Statement Considered Harmful" this era focused on
+modularity and logical flow, replacing jumps with loops and conditionals. This
+era saw the introduction of new programming paradigms, most importantly the
+object oriented programming paradigm which gained massive popularity and is
+still the most popular paradigm.
+
+C - designed to program the UNIX operating system, it quickly became universal
+thanks to its portability and speed. Still in use in systems programming to
+this day.
+
+Pascal - simple, general purpose language, designed for teaching structured
+programming
+
+Prolog - introduced logic programming, declarative instead of imperative
+
+SQL - language of query for relational databases, revolutionzed data management
+by using set-based operations.
+
+
+## Object oriented shift
+
+Transitioning for procedural logic to data-centric encapsulation this era saw
+the rise of object oriented programming paradigm which would dominate the
+programming landscape for years to come.
+
+C++ - successor to the C language, integrated classes into the C infrastructure
+while mostly mantaining the performance and backwards compatibility with C,
+still developed.
+
+Smalltalk - fully object oriented language, integrated with GUI
+
+Ada - named after Ada Lovelace and descended from Pascal, general purpose
+programming language sponsored by D.O.D. with a strong focus on safety and
+maintability on embedded and real-time systems.
+
+## Scripting and productivity boom
+
+Shift toward "developer velocity", new languages trade execution speed with
+features greatly simplifying the work of programmers.
+
+Python - scripting language, vast standard libraries allowing the user to
+quickly start working and prototyping which made it king of scientific
+computing and data automation
+
+Java - platform independence achieved by using the Java Virtual Machine and
+Bytecode becoming the standard for enterprise-scale corporate software
+
+JavaScript - scripting language to embed prodecural code into web pages. Has
+nothing to do with Java, was named after it for name recognition.
+
+PHP - multiplatform scripting language embedded inside HTML
+
+Ruby - designed as an alternative to Python, more focused on OOP.
+
+## Contemporary language trends
+
+Contemporary languages tend to focus on memory safety, concurrency and type
+inference providing guardrails for programmers to avoid critical mistakes while
+not limiting the expressibility of the language.
+
+Rust - solves the "Billion Dollar Mistake" by using an ownership system which
+prevents null pointer errors and memory leaks at compile time without slowing
+the language.
+
+Go - developed at Google for distributed systems, focus on safe concurrency.
+
+TypeScript - extension of JavaScript with rigorous type system for
+maintanability
+
+Swift & Kotlin - modernisation of Objective-C and Java for iOS and Android
+respectively, modern syntax and better safety features for mobile apps.
+
+## Future of programming
+
+With the rise of LLMS we are moving from writing code to guiding agents writing
+it focusing more on high-level architecture.
+
+There is a rise of popularity of Domain Specific Languages which trade general
+flexiblity for precision and efficiency in their specific domain
+
+Quantum Paradigms - a completely different model, programming for quantum
+computers involves qubits and superposition requiring entirely new logical
+frameworks and languages which will have to be created and developed along with
+improvement to the quantum computing itself.
