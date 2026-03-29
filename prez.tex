@@ -3,7 +3,6 @@
 \usetheme{Madrid}
 \usecolortheme{default}
 \setbeamercovered{transparent}
-
 \title{The Evolution of Computing Paradigms}
 \subtitle{A Comprehensive History of Programming Languages}
 \author{Wojciech Fiołka, Paweł Kojma, Michał Bednarz, Jakub
@@ -15,133 +14,142 @@ Chomiczewski, Filip Rabiega}
 
 \frame{\titlepage}
 
-\begin{frame}{Foundations of programming}
+\begin{frame}{What is a Programming Language?}
+\begin{columns}
+    \column{0.5\textwidth}
+    A programming language is a structured way for humans to communicate instructions to a machine. Computers fundamentally operate on binary logic, which is unintuitive for humans.
+
+    \column{0.5\textwidth}
+    \vspace{0.3cm}
+    They are essential because they:
+    \begin{itemize}
+        \item Translate human intent into machine-executable steps
+        \item Manage complexity through abstraction
+        \item Enable scalable and maintainable systems
+    \end{itemize}
+\end{columns}
+
+    \centering
+    \includegraphics[width=0.6\textwidth,keepaspectratio]{img/Computer-Program-Compilation-1-1-3821671490.jpg}
+\end{frame}
+
+\begin{frame}{Early Concept of an Algorithm}
   \begin{columns}
-    \column{0.55\textwidth}
-    Programming began as the bridge between mathematical theory and
-    physical hardware. We moved from 19th-century algorithms to the
-    reality of binary machine code, eventually developing assemblers
-    to translate human mnemonics into logic. This era established the
-    core necessity of abstraction to manage growing complexity.
+    \column{0.6\textwidth}
+    Long before modern computers, the concept of an algorithm existed as a precise sequence of steps to solve a problem.
+
+    \vspace{0.3cm}
+    In the 19th century:
+    \begin{itemize}
+        \item Charles Babbage designed the Analytical Engine
+        \item Ada Lovelace described symbolic computation
+        \item First algorithm intended for machine execution
+    \end{itemize}
+
+    This marked the conceptual birth of programming.
 
     \column{0.4\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{img/foundations_of_programming.jpg}
-    \par\vspace{0.2cm}
-    \footnotesize{Ancient programmer}
+    \includegraphics[width=0.9\textwidth]{img/ada_babbage.jpg}
   \end{columns}
 \end{frame}
 
-\begin{frame}{First languages}
+\begin{frame}{Assembly Language}
   \begin{columns}
-    \column{0.55\textwidth}
-    The "Software Crisis" forced a leap toward high-level
-    portability. This period defined the three pillars of computing:
-    high-speed calculation, business data processing, and the birth
-    of functional programming. By introducing symbolic logic and
-    automated memory management, these languages broke the rigid link
-    between code and machine architecture.
+    \column{0.5\textwidth}
+    Assembly language was the first step away from raw machine code, replacing binary with mnemonic instructions.
 
-    \column{0.4\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{img/first_languages.png}
-    \par\vspace{0.2cm}
-    \footnotesize{Software Crisis}
+    \vspace{0.3cm}
+
+    \column{0.5\textwidth}
+    Key characteristics:
+    \begin{itemize}
+        \item Very close to hardware
+        \item Nearly 1:1 with CPU instructions
+        \item Efficient but difficult to maintain
+        \item Architecture-dependent
+    \end{itemize}
   \end{columns}
+  \centering
+    \includegraphics[width=0.6\textwidth,keepaspectratio]{img/asm.png}
 \end{frame}
 
-\begin{frame}{Assembly}
-  \begin{columns}
-    \column{0.4\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{img/working_with_assembly.png}
-    \par\vspace{0.2cm}
-    \footnotesize{Typical work with assembly}
-    
-    \column{0.55\textwidth}
-    Due to the unfair fight against unreadable instructions, assembly 
-    language was created in 1947. It~introduced a~layer of 
-    abstraction over manually writing 1s and 0s, 
-    but it~is still closely tied to the processor's architecture. 
-    It~also has an almost 1:1 correspondence 
-    with the operations performed by the processor.
-  \end{columns}
-\end{frame}
 \begin{frame}{Fortran}
   \begin{columns}
-    \column{0.4\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{img/fortran-for-physics-f90-meme-v0-87ltrusg94cd1.png}
-    \par\vspace{0.2cm}
-    \footnotesize{Physics and fortran}
-    
-    \column{0.55\textwidth}
-    Due to the growing need for easier scientific calculations, Fortran
-    was created in 1957. It introduced a higher level of abstraction
-    over low-level programming, making it possible to write complex
-    mathematical formulas in a more human-readable way.
-    It is designed for efficient numerical computation
-    and is still widely used in science and engineering today.
-  \end{columns}
-  
-\end{frame}
+    \column{0.68\textwidth}
+    Fortran (FORmula TRANslator) was one of the first high-level programming languages, created for scientific computation. Developed by John Backus at IBM
 
-\begin{frame}{Cobol}
-  \begin{columns}
-    \column{0.55\textwidth}
-    Due to the desperate need for business-friendly code 
-    (and a lot of headaches today), COBOL
-    was created in 1959. It introduced a very English-like syntax,
-    so programs could almost read like plain sentences—sometimes
-    very long sentences. It is designed for processing large amounts of data,
-    especially in banking and administration, and somehow
-    it is still running many critical systems today.
+    \vspace{0.3cm}
+    It introduced:
+    \begin{itemize}
+        \item Mathematical expressions in code
+        \item Compiler abstraction
+        \item Efficient numerical processing
+    \end{itemize}
 
-    \column{0.4\textwidth}
+    \column{0.28\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{img/one_not_simple_work_with_cobol.png}
-    \par\vspace{0.2cm}
-    \footnotesize{Work with cobol}
+    \includegraphics[width=0.9\textwidth]{img/fortran-for-physics-f90-meme-v0-87ltrusg94cd1.png}
   \end{columns}
-  
 \end{frame}
 
 
-\begin{frame}{C}
+\begin{frame}{COBOL}
   \begin{columns}
-    \column{0.55\textwidth}
-    Due to the need for a powerful yet flexible system programming language, C
-    was created in 1972. It introduced a balance between low-level control
-    and high-level structure, allowing programmers to work closely with
-    hardware without writing everything in assembly.
-    It is fast, efficient, and dangerously easy to misuse,
-    which is why it became the foundation for many modern languages.
+    \column{0.68\textwidth}
+    COBOL was designed for business and administrative applications.
+    It is an imperative, procedural, object-oriented language.
+    \vspace{0.3cm}
+    Its main ideas:
+    \begin{itemize}
+        \item English-like syntax
+        \item Focus on data processing
+        \item Widely used in finance and government
+    \end{itemize}
 
-    \column{0.4\textwidth}
+    \column{0.28\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{img/C_segfault.png}
-    \par\vspace{0.2cm}
-    \footnotesize{Segfaul}
+    \includegraphics[width=0.9\textwidth]{img/one_not_simple_work_with_cobol.png}
   \end{columns}
-  
+\end{frame}
+
+\begin{frame}{C Language}
+  \begin{columns}
+    \column{0.5\textwidth}
+    The C language balances low-level control with high-level abstraction.
+
+    \column{0.5\textwidth}
+    \vspace{0.3cm}
+    It enabled:
+    \begin{itemize}
+        \item Direct memory manipulation
+        \item Portable system programming
+        \item Efficient development
+    \end{itemize}
+  \end{columns}
+  \vspace{0.3cm}
+  \centering
+    \includegraphics[width=0.6\textwidth, keepaspectratio]{img/c.jpg}
 \end{frame}
 
 \begin{frame}{LISP}
   \begin{columns}
-    \column{0.4\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{img/lisp.png}
-    \par\vspace{0.2cm}
-    \footnotesize{The average LISP experience}
-
-    \column{0.55\textwidth}
-    First functional language, introduced garbage
-    collection and heap allocation, symbolic computing used for
-    reasearching AI in the US, free from Von Neumannean notions of variables,
-    assignments, gotos etc. It didn't catch on in the 50s and 60s due
-    to hardware limitations and lack of tooling at the time, it has however
-    spawned many dialects over the years.
+    \column{0.5\textwidth}
+    The LISP family of programming languages is one of the oldest high-level language families, created in the late 1950s.
+    Notable dialects include Scheme, Common Lisp, and Clojure.
+    \column{0.5\textwidth}
+    \vspace{0.3cm}
+    Key characteristics:
+    \begin{itemize}
+        \item Based on symbolic computation and list processing
+        \item Uses a simple and uniform syntax (prefix notation)
+        \item Code and data share the same structure (homoiconicity)
+        \item Widely used in artificial intelligence research
+    \end{itemize}
   \end{columns}
+  \vspace{0.3cm}
+  \centering
+    \includegraphics[width=0.5\textwidth,keepaspectratio]{img/lisp.png}
 \end{frame}
 
 \begin{frame}{Structure and logic}
